@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Title from './modules/Title'
-import Layout from './modules/layouts'
-import Content from './modules/Content'
+import Title from '../modules/Title'
+import Layout from '../modules/layouts'
+import Content from '../modules/Content'
 
 export default function Home() {
 	return (

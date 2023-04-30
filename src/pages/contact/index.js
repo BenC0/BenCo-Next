@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Title from '../modules/Title'
-import Layout from '../modules/layouts'
-import Content from '../modules/Content'
-import CallToAction from '../modules/CallToAction'
+import Title from '../../modules/Title'
+import Layout from '../../modules/layouts'
+import Content from '../../modules/Content'
+import CallToAction from '../../modules/CallToAction'
 
 export default function Contact() {
 	return (

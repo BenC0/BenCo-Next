@@ -122,8 +122,7 @@
 								);
 	}
 
-	opacity: 1;
-	transition: opacity .5s ease-out .5s;
+	opacity: 0;
 }
 
 body:not(.nav-active) {
@@ -131,6 +130,15 @@ body:not(.nav-active) {
 		opacity: 0;
 		pointer-events: none;
 		transition: opacity .5s ease-out;
+	}
+}
+
+
+body.nav-active {
+	& #nav {
+		opacity: 1;
+		pointer-events: none;
+		transition: opacity .5s ease-out .5s;
 	}
 }
 

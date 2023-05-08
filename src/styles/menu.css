@@ -26,8 +26,8 @@
 		height: 5px;
 		display: block;
 		margin-bottom: 5px;
-		background: var(--page-color-primary);
 		transition: background .15s ease-in;
+		background: var(--page-color-primary);
 
 		&:nth-child(2) {
 			background: var(--page-color-secondary);
@@ -40,6 +40,14 @@
 	}
 }
 
+body:not(.nav-active) {
+	transition: opacity .5s ease-out;
+	& #nav {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
 #nav {
 	top: 0;
 	left: 50%;
@@ -47,10 +55,10 @@
 	z-index: 9;
 	width: 100%;
 	position: fixed;
+	padding: 0 1rem;
+	font-size: 1.36rem;
 	background: var(--black);
 	transform: translateX(-50%);
-	font-size: 1.36rem;
-	padding: 0 1rem;
 
 	& ul {
 		margin: 0;
@@ -72,8 +80,8 @@
 			font-weight: 400;
 			color: var(--white);
 			text-decoration: none;
-			padding: var(--gutter-size) 0;
 			margin: var(--gutter-size) 0;
+			padding: var(--gutter-size) 0;
 
 			&[href="/"] {
 				&:hover, &:focus, &:active, &.active {
@@ -124,14 +132,6 @@
 
 	opacity: 1;
 	transition: opacity .5s ease-out .5s;
-}
-
-body:not(.nav-active) {
-	transition: opacity .5s ease-out;
-	& #nav {
-		opacity: 0;
-		pointer-events: none;
-	}
 }
 
 .nav-active {

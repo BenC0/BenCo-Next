@@ -26,8 +26,8 @@
 		height: 5px;
 		display: block;
 		margin-bottom: 5px;
-		transition: background .15s ease-in;
 		background: var(--page-color-primary);
+		transition: background .15s ease-in;
 
 		&:nth-child(2) {
 			background: var(--page-color-secondary);
@@ -37,14 +37,6 @@
 			margin-bottom: 0;
 			background: var(--page-color-tertiary);
 		}
-	}
-}
-
-body:not(.nav-active) {
-	transition: opacity .5s ease-out;
-	& #nav {
-		opacity: 0;
-		pointer-events: none;
 	}
 }
 
@@ -132,6 +124,14 @@ body:not(.nav-active) {
 
 	opacity: 1;
 	transition: opacity .5s ease-out .5s;
+}
+
+body:not(.nav-active) {
+	& #nav {
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity .5s ease-out;
+	}
 }
 
 .nav-active {

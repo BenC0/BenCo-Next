@@ -124,6 +124,7 @@
 
 	opacity: 0;
 	pointer-events: none;
+	display: grid !important;
 	transition: opacity .5s ease-out;
 }
 

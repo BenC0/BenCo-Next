@@ -23,7 +23,9 @@ export function MenuIcon() {
 
 export function Menu() {
 	return (
-        <nav id="nav" className="m-grid-4 d-grid-12">
+        <nav id="nav" className="m-grid-4 d-grid-12" style={{
+            display: "none"
+        }}>
             <ul className="d-span-11 m-span-3">
                 <li>
                     <Link onClick={MenuClick} href="/">Home</Link>

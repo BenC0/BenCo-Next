@@ -123,22 +123,15 @@
 	}
 
 	opacity: 0;
+	pointer-events: none;
+	transition: opacity .5s ease-out;
 }
-
-body:not(.nav-active) {
-	& #nav {
-		opacity: 0;
-		pointer-events: none;
-		transition: opacity .5s ease-out;
-	}
-}
-
 
 body.nav-active {
 	& #nav {
+		transition: opacity .5s ease-out .5s;
 		opacity: 1;
 		pointer-events: none;
-		transition: opacity .5s ease-out .5s;
 	}
 }
 

@@ -132,7 +132,7 @@ body.nav-active {
 	& #nav {
 		transition: opacity .5s ease-out .5s;
 		opacity: 1;
-		pointer-events: none;
+		pointer-events: auto;
 	}
 }
 
